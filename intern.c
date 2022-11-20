@@ -1,0 +1,1 @@
+#include<stdio.h> int main() { int id,i,d,ino; printf("Enter ID : "); scanf("%d",&id); d=id%5000; if(d==0) { ino=id/5000; printf("\nIntern-%d day-1",ino); } else { i=1; while(id%5000!=0) { id=id-5000-i; i++; } ino=id/5000; printf("\nIntern-%d day-%d",ino,i); } return 0; } 
